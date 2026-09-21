@@ -4,8 +4,6 @@
 
 <a href="http://www.github.com/MarioUrenaGarcia"><img src="https://github-readme-streak-stats.herokuapp.com/?user=MarioUrenaGarcia&stroke=ffffff&background=1c1917&ring=ef4444&fire=ef4444&currStreakNum=ffffff&currStreakLabel=ef4444&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
-<a href="https://github.com/MarioUrenaGarcia" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarioUrenaGarcia&langs_count=10&title_color=ef4444&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
-
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Mario Ureña
 ====================================================================================================================================
 
