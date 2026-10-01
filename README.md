@@ -42,10 +42,11 @@
 <div align="center">
 <br />
 <a href="https://github.com/MarioUrenaGarcia"><img src="https://github-readme-streak-stats.herokuapp.com/?user=MarioUrenaGarcia&background=0b0002&stroke=ff0033&ring=ff0033&fire=ff0033&currStreakNum=ffffff&currStreakLabel=ff2a3d&sideNums=ffffff&sideLabels=ff7a85&dates=7a0a14&hide_border=true" alt="GitHub streak" width="100%" /></a>
-<br /><br />
-<a href="https://github.com/MarioUrenaGarcia"><img src="https://github-readme-activity-graph.vercel.app/graph?username=MarioUrenaGarcia&bg_color=0b0002&color=ff7a85&line=ff0033&point=ffffff&area=true&area_color=ff0033&title_color=ff2a3d&hide_border=true&custom_title=Contribution%20Signal" alt="Contribution graph" width="100%" /></a>
+
 </div>
 
 <br />
+
+<img src="assets/bird.svg" alt="Neon bird singing" width="100%" />
 
 <img src="assets/footer.svg" alt="End of transmission" width="100%" />

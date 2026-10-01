@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 502" width="1000" height="502">
 <defs>
-  <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
     <feGaussianBlur stdDeviation="2.2" result="b"/>
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
-  <filter id="bigglow" x="-30%" y="-80%" width="160%" height="260%">
+  <filter id="bigglow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
     <feGaussianBlur stdDeviation="7"/>
   </filter>
   <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">

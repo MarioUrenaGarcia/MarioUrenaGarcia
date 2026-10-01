@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="1000" height="230">
+<defs>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
+    <feGaussianBlur stdDeviation="2.4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="bigglow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
+    <feGaussianBlur stdDeviation="9"/>
+  </filter>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#000" opacity="0.28"/>
+  </pattern>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#050000"/>
+    <stop offset="1" stop-color="#160004"/>
+  </linearGradient>
+  <linearGradient id="wire" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ff0033" stop-opacity="0"/>
+    <stop offset="0.2" stop-color="#ff0033"/>
+    <stop offset="0.8" stop-color="#ff0033"/>
+    <stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
+  </linearGradient>
+  <g id="note1" fill="#ff2a3d" stroke="#ff2a3d" stroke-width="2.4" stroke-linecap="round">
+    <ellipse cx="0" cy="0" rx="6.5" ry="4.8" transform="rotate(-22)" stroke="none"/>
+    <line x1="5.6" y1="-2" x2="5.6" y2="-28"/>
+    <path d="M 5.6 -28 Q 16 -22 13 -11" fill="none"/>
+  </g>
+  <g id="note2" fill="#ffffff" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round">
+    <ellipse cx="0" cy="0" rx="6" ry="4.4" transform="rotate(-22)" stroke="none"/>
+    <ellipse cx="20" cy="-5" rx="6" ry="4.4" transform="rotate(-22 20 -5)" stroke="none"/>
+    <line x1="5.2" y1="-2" x2="5.2" y2="-28"/>
+    <line x1="25.2" y1="-7" x2="25.2" y2="-33"/>
+    <path d="M 5.2 -28 L 25.2 -33 L 25.2 -27 L 5.2 -22 Z" stroke="none"/>
+  </g>
+</defs>
+<style>
+  text { font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
+  .hud { fill:#ff3344; font-size:12px; letter-spacing:2px; }
+  .dim { fill:#7a0a14; font-size:11px; letter-spacing:2px; }
+  .head { transform-box: view-box; transform-origin: 520px 118px; animation: bob 2.4s ease-in-out infinite; }
+  @keyframes bob {
+    0%,100% { transform: rotate(0deg); }
+    12%,22% { transform: rotate(-9deg); }
+    32%,42% { transform: rotate(-6deg); }
+    55% { transform: rotate(2deg); }
+  }
+  .jaw { transform-box: view-box; transform-origin: 548px 99px; animation: sing 2.4s ease-in-out infinite; }
+  @keyframes sing {
+    0%,8%,26%,30%,46%,100% { transform: rotate(0deg); }
+    14%,20% { transform: rotate(24deg); }
+    35%,41% { transform: rotate(18deg); }
+  }
+  .eye { transform-box: fill-box; transform-origin: center; animation: blinkeye 4.8s steps(1) infinite; }
+  @keyframes blinkeye { 0%,94%,100% { transform: scaleY(1); } 95%,97% { transform: scaleY(.1); } }
+  .body { transform-box: view-box; transform-origin: 495px 152px; animation: breathe 2.4s ease-in-out infinite; }
+  @keyframes breathe { 0%,100% { transform: scale(1,1); } 15%,40% { transform: scale(1.03,1.06); } }
+  .tail { transform-box: view-box; transform-origin: 462px 126px; animation: flick 4.8s ease-in-out infinite; }
+  @keyframes flick { 0%,60%,72%,100% { transform: rotate(0deg); } 64% { transform: rotate(-14deg); } 68% { transform: rotate(6deg); } }
+  .float { opacity:0; animation: float 2.4s ease-out infinite; }
+  @keyframes float {
+    0% { opacity:0; transform: translate(0,0) rotate(0deg) scale(.6); }
+    15% { opacity:1; }
+    50% { transform: translate(60px,-45px) rotate(10deg) scale(1); }
+    100% { opacity:0; transform: translate(140px,-95px) rotate(-8deg) scale(1.1); }
+  }
+  .eq rect { transform-box: fill-box; transform-origin: bottom; animation: eq 0.9s ease-in-out infinite alternate; }
+  @keyframes eq { from { transform: scaleY(.15); } to { transform: scaleY(1); } }
+  .pulse { stroke-dasharray: 140 1600; animation: run 3.4s linear infinite; }
+  @keyframes run { from { stroke-dashoffset: 140; } to { stroke-dashoffset: -1600; } }
+  .dot { animation: blinkdot 1.2s steps(1) infinite; }
+  @keyframes blinkdot { 0% { opacity:1; } 50% { opacity:0; } }
+</style>
+
+<rect width="1000" height="230" rx="8" fill="url(#bg)"/>
+<ellipse cx="500" cy="168" rx="170" ry="40" fill="#ff0033" opacity=".18" filter="url(#bigglow)"/>
+
+<line x1="0" y1="168" x2="1000" y2="168" stroke="url(#wire)" stroke-width="2.2" filter="url(#glow)"/>
+<line class="pulse" x1="0" y1="168" x2="1000" y2="168" stroke="#ffffff" stroke-width="2.4" filter="url(#glow)"/>
+<line x1="150" y1="168" x2="150" y2="230" stroke="#5a0610" stroke-width="2"/>
+<line x1="850" y1="168" x2="850" y2="230" stroke="#5a0610" stroke-width="2"/>
+
+<g stroke="#ff2a3d" stroke-width="2.4" stroke-linecap="round" filter="url(#glow)">
+  <path d="M 488 150 L 485 168 M 480 168 L 491 168" fill="none"/>
+  <path d="M 506 150 L 509 168 M 503 168 L 514 168" fill="none"/>
+</g>
+
+<g fill="#140003" stroke="#ff2a3d" stroke-width="2.4" stroke-linejoin="round" filter="url(#glow)">
+  <g class="tail"><path d="M 466 120 L 418 100 L 430 124 L 416 146 L 468 134 Z"/></g>
+  <g class="body">
+    <ellipse cx="495" cy="126" rx="40" ry="29"/>
+    <path d="M 470 118 Q 497 98 524 120 Q 500 140 470 118 Z" fill="#2a0008"/>
+    <path d="M 480 120 Q 497 112 512 121" fill="none" stroke-width="1.4" opacity=".7"/>
+  </g>
+  <g class="head">
+    <circle cx="530" cy="96" r="20"/>
+    <path d="M 518 80 L 522 70 L 528 78 L 534 68 L 538 78" fill="none" stroke-width="2"/>
+    <path d="M 547 89 L 572 95 L 548 99 Z" fill="#ff2a3d"/>
+    <g class="jaw"><path d="M 548 99 L 569 100 L 547 105 Z" fill="#ff2a3d"/></g>
+    <g class="eye"><circle cx="536" cy="92" r="3.6" fill="#ffffff" stroke="none"/></g>
+  </g>
+</g>
+
+<g transform="translate(578 86)">
+  <g class="float" style="animation-delay:.25s"><use href="#note1" filter="url(#glow)"/></g>
+</g>
+<g transform="translate(582 92)">
+  <g class="float" style="animation-delay:.95s"><use href="#note2" filter="url(#glow)" transform="scale(.8)"/></g>
+</g>
+<g transform="translate(574 90)">
+  <g class="float" style="animation-delay:1.6s"><use href="#note1" filter="url(#glow)" transform="scale(.75)"/></g>
+</g>
+
+<g fill="none" stroke="#ff2a3d" stroke-width="2" filter="url(#glow)">
+  <path d="M 14 40 V 14 H 40"/><path d="M 960 14 H 986 V 40"/>
+</g>
+<circle class="dot" cx="58" cy="23" r="4" fill="#ff2a3d"/>
+<text class="hud" x="70" y="27">NOW PLAYING: birdsong.wav</text>
+<text class="dim" x="70" y="46">SRC: NODE 0x4D55 // WIRE 07</text>
+
+<g class="eq" fill="#ff2a3d" filter="url(#glow)">
+  <rect x="890" y="18" width="6" height="28" style="animation-delay:-.1s"/>
+  <rect x="900" y="18" width="6" height="28" style="animation-delay:-.5s"/>
+  <rect x="910" y="18" width="6" height="28" style="animation-delay:-.3s"/>
+  <rect x="920" y="18" width="6" height="28" style="animation-delay:-.7s"/>
+  <rect x="930" y="18" width="6" height="28" style="animation-delay:-.2s"/>
+  <rect x="940" y="18" width="6" height="28" style="animation-delay:-.6s"/>
+</g>
+<text class="dim" x="986" y="62" text-anchor="end">FREQ 4.2 kHz</text>
+
+<rect width="1000" height="230" rx="8" fill="url(#scan)"/>
+<rect x="1" y="1" width="998" height="228" rx="8" fill="none" stroke="#ff0033" stroke-opacity=".35"/>
+</svg>
