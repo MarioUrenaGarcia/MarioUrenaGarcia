@@ -16,18 +16,6 @@
 
 <br />
 
-<img src="assets/section-projects.svg" alt="Starred projects" width="100%" />
-
-<div align="center">
-<br />
-<a href="https://github.com/MarioUrenaGarcia/piedra-papel-tijera"><img src="assets/project-rps.svg" alt="Piedra papel tijera" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/atlas-data-science"><img src="assets/project-atlas.svg" alt="Atlas data science" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH blobs" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB visualization" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips" width="49%" /></a>
-<br /><br />
-</div>
-
 <img src="assets/section-arsenal.svg" alt="Arsenal" width="100%" />
 
 <div align="center">
@@ -58,6 +46,18 @@
 </div>
 
 <br />
+
+<img src="assets/section-projects.svg" alt="Starred projects" width="100%" />
+
+<div align="center">
+<br />
+<a href="https://github.com/MarioUrenaGarcia/piedra-papel-tijera"><img src="assets/project-rps.svg" alt="Piedra papel tijera" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/atlas-data-science"><img src="assets/project-atlas.svg" alt="Atlas data science" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH blobs" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB visualization" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips" width="49%" /></a>
+<br /><br />
+</div>
 
 <img src="assets/bird.svg" alt="Neon bird singing" width="100%" />
 
