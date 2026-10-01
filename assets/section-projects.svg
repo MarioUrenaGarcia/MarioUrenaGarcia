@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="1000" height="64">
+<defs>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="bigglow" filterUnits="userSpaceOnUse" x="-100" y="-100" width="1200" height="800">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#000" opacity="0.28"/>
+  </pattern>
+
+  <linearGradient id="ln" x1="0" x2="1">
+    <stop offset="0" stop-color="#ff0033"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<style>
+  text { font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
+  .lbl { fill:#ff2a3d; font-size:26px; font-weight:800; letter-spacing:6px; }
+  .code { fill:#7a0a14; font-size:12px; letter-spacing:3px; }
+  .pulse { stroke-dasharray: 90 1200; animation: run 3s linear infinite; }
+  @keyframes run { from { stroke-dashoffset: 90; } to { stroke-dashoffset: -1200; } }
+  .flicker { animation: flicker 4s infinite; }
+  @keyframes flicker { 0%,40%,42%,44%,100% { opacity:1; } 41%,43% { opacity:.3; } }
+</style>
+<path d="M 6 14 L 18 26 L 6 38" fill="none" stroke="#ff2a3d" stroke-width="3" filter="url(#glow)"/>
+<text class="lbl flicker" x="32" y="36" filter="url(#glow)">STARRED PROJECTS</text>
+<text class="code" x="994" y="36" text-anchor="end">FEATURED BUILDS: 5</text>
+<line x1="0" y1="54" x2="1000" y2="54" stroke="url(#ln)" stroke-width="1.5"/>
+<line class="pulse" x1="0" y1="54" x2="1000" y2="54" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
+</svg>

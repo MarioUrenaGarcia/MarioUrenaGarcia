@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 290" width="500" height="290">
+<defs>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-50" y="-50" width="600" height="400">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="bigglow" filterUnits="userSpaceOnUse" x="-50" y="-50" width="600" height="400">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#000" opacity="0.28"/>
+  </pattern>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0b0002"/><stop offset="1" stop-color="#170005"/>
+  </linearGradient>
+  
+</defs>
+<style>
+  text { font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
+  .t { fill:#ff2a3d; font-size:21px; font-weight:800; letter-spacing:2px; }
+  .s { fill:#ffb3ba; font-size:12px; }
+  .dim { fill:#7a0a14; font-size:11px; letter-spacing:2px; }
+  .lbl { fill:#ffd6da; font-size:12px; letter-spacing:1px; }
+  .tag { fill:#ffd6da; font-size:11px; letter-spacing:1px; }
+  .acc { fill:#ff2a3d; font-size:12px; letter-spacing:2px; }
+  .edge { animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { stroke-opacity:.4; } 50% { stroke-opacity:1; } }
+  .cur { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 0% { opacity:1; } 50% { opacity:0; } }
+  .run { stroke-dasharray: 70 900; animation: run 3s linear infinite; }
+  @keyframes run { from { stroke-dashoffset: 70; } to { stroke-dashoffset: -900; } }
+  .lm { animation: lm 1.6s ease-in-out infinite; }@keyframes lm { 0%,100% { opacity:1; } 50% { opacity:.35; } }.sweep { animation: sweep 2.2s ease-in-out infinite alternate; }@keyframes sweep { from { transform: translateY(0); } to { transform: translateY(132px); } }.big { fill:#ffffff; font-size:24px; font-weight:800; letter-spacing:3px; }.red { fill:#ff2a3d; }.win { fill:#ff2a3d; font-size:13px; letter-spacing:2px; animation: blink 1.5s steps(1) infinite; }.conf { transform-box: fill-box; transform-origin: left; animation: conf 1.5s ease-out infinite; }@keyframes conf { from { transform: scaleX(0); } 70%,to { transform: scaleX(1); } }.cy { opacity:0; animation: cy 4.5s steps(1) infinite; }@keyframes cy { 0% { opacity:1; } 33.33% { opacity:0; } 100% { opacity:0; } }
+</style>
+<rect x="2" y="2" width="496" height="286" rx="10" fill="url(#bg)"/>
+<rect class="edge" x="2" y="2" width="496" height="286" rx="10" fill="none" stroke="#ff0033" stroke-width="2" filter="url(#glow)"/>
+<text class="t" x="22" y="38" filter="url(#glow)">PIEDRA PAPEL TIJERA</text>
+<text class="s" x="22" y="58">Webcam vs a machine that never loses</text>
+<text class="dim" x="478" y="36" text-anchor="end">PRJ_01</text>
+<line x1="2" y1="70" x2="498" y2="70" stroke="#ff0033" stroke-opacity=".35"/>
+<line class="run" x1="2" y1="70" x2="498" y2="70" stroke="#ffffff" stroke-width="1.6" filter="url(#glow)"/>
+
+<g fill="none" stroke="#ff2a3d" stroke-width="2" filter="url(#glow)">
+  <path d="M 84 100 h 16 M 84 100 v 16"/><path d="M 214 100 h -16 M 214 100 v 16"/>
+  <path d="M 84 238 h 16 M 84 238 v -16"/><path d="M 214 238 h -16 M 214 238 v -16"/>
+</g>
+<text class="dim" x="86" y="93">HAND 0.998</text>
+<g class="sweep"><rect x="86" y="100" width="126" height="3" fill="#ff2a3d" opacity=".55" filter="url(#glow)"/></g>
+<g stroke="#ff7a85" stroke-width="1.6" opacity=".85"><line x1="150" y1="228" x2="128" y2="218"/><line x1="128" y1="218" x2="112" y2="202"/><line x1="112" y1="202" x2="102" y2="188"/><line x1="102" y1="188" x2="94" y2="176"/><line x1="150" y1="228" x2="136" y2="180"/><line x1="136" y1="180" x2="132" y2="155"/><line x1="132" y1="155" x2="130" y2="140"/><line x1="130" y1="140" x2="129" y2="126"/><line x1="136" y1="180" x2="150" y2="177"/><line x1="150" y1="177" x2="150" y2="150"/><line x1="150" y1="150" x2="150" y2="133"/><line x1="150" y1="133" x2="150" y2="118"/><line x1="150" y1="177" x2="163" y2="180"/><line x1="163" y1="180" x2="166" y2="155"/><line x1="166" y1="155" x2="168" y2="140"/><line x1="168" y1="140" x2="169" y2="127"/><line x1="163" y1="180" x2="175" y2="186"/><line x1="150" y1="228" x2="175" y2="186"/><line x1="175" y1="186" x2="182" y2="166"/><line x1="182" y1="166" x2="186" y2="154"/><line x1="186" y1="154" x2="189" y2="143"/></g>
+<g fill="#ffffff" filter="url(#glow)"><circle class="lm" style="animation-delay:0.00s" cx="150" cy="228" r="3.4"/><circle class="lm" style="animation-delay:0.07s" cx="128" cy="218" r="3.4"/><circle class="lm" style="animation-delay:0.14s" cx="112" cy="202" r="3.4"/><circle class="lm" style="animation-delay:0.21s" cx="102" cy="188" r="3.4"/><circle class="lm" style="animation-delay:0.28s" cx="94" cy="176" r="3.4"/><circle class="lm" style="animation-delay:0.35s" cx="136" cy="180" r="3.4"/><circle class="lm" style="animation-delay:0.42s" cx="132" cy="155" r="3.4"/><circle class="lm" style="animation-delay:0.49s" cx="130" cy="140" r="3.4"/><circle class="lm" style="animation-delay:0.56s" cx="129" cy="126" r="3.4"/><circle class="lm" style="animation-delay:0.63s" cx="150" cy="177" r="3.4"/><circle class="lm" style="animation-delay:0.70s" cx="150" cy="150" r="3.4"/><circle class="lm" style="animation-delay:0.77s" cx="150" cy="133" r="3.4"/><circle class="lm" style="animation-delay:0.84s" cx="150" cy="118" r="3.4"/><circle class="lm" style="animation-delay:0.91s" cx="163" cy="180" r="3.4"/><circle class="lm" style="animation-delay:0.98s" cx="166" cy="155" r="3.4"/><circle class="lm" style="animation-delay:1.05s" cx="168" cy="140" r="3.4"/><circle class="lm" style="animation-delay:1.12s" cx="169" cy="127" r="3.4"/><circle class="lm" style="animation-delay:1.19s" cx="175" cy="186" r="3.4"/><circle class="lm" style="animation-delay:1.26s" cx="182" cy="166" r="3.4"/><circle class="lm" style="animation-delay:1.33s" cx="186" cy="154" r="3.4"/><circle class="lm" style="animation-delay:1.40s" cx="189" cy="143" r="3.4"/></g>
+<text class="dim" x="250" y="122">YOU</text><text style="animation-delay:0.00s" x="330" y="122" class="cy big">ROCK</text><text style="animation-delay:1.50s" x="330" y="122" class="cy big">PAPER</text><text style="animation-delay:3.00s" x="330" y="122" class="cy big">SCISSORS</text>
+<text class="dim" x="250" y="172">CPU</text><text style="animation-delay:0.00s" x="330" y="172" class="cy big red">PAPER</text><text style="animation-delay:1.50s" x="330" y="172" class="cy big red">SCISSORS</text><text style="animation-delay:3.00s" x="330" y="172" class="cy big red">ROCK</text>
+<rect x="250" y="196" width="210" height="10" fill="none" stroke="#5a0610"/>
+<rect class="conf" x="252" y="198" width="206" height="6" fill="#ff2a3d"/>
+<text class="win" x="250" y="230">CPU WINS // AGAIN</text>
+
+<line x1="2" y1="246" x2="498" y2="246" stroke="#ff0033" stroke-opacity=".35"/>
+<rect x="22" y="257" width="90" height="20" rx="3" fill="#2a0008" stroke="#ff2a3d" stroke-width="1"/><text x="67" y="271" text-anchor="middle" class="tag">JAVASCRIPT</text><rect x="120.0" y="257" width="127" height="20" rx="3" fill="#2a0008" stroke="#ff2a3d" stroke-width="1"/><text x="184" y="271" text-anchor="middle" class="tag">MEDIAPIPE HANDS</text>
+<text class="acc" x="466" y="271" text-anchor="end">&gt; OPEN REPO</text>
+<rect class="cur" x="470" y="261" width="8" height="13" fill="#ff2a3d"/>
+<rect x="2" y="2" width="496" height="286" rx="10" fill="url(#scan)"/>
+</svg>
