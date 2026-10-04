@@ -26,7 +26,7 @@
 </style>
 <path d="M 6 14 L 18 26 L 6 38" fill="none" stroke="#ff2a3d" stroke-width="3" filter="url(#glow)"/>
 <text class="lbl flicker" x="32" y="36" filter="url(#glow)">STARRED PROJECTS</text>
-<text class="code" x="994" y="36" text-anchor="end">FEATURED BUILDS: 5</text>
+<text class="code" x="994" y="36" text-anchor="end">FEATURED BUILDS: 6</text>
 <line x1="0" y1="54" x2="1000" y2="54" stroke="url(#ln)" stroke-width="1.5"/>
 <line class="pulse" x1="0" y1="54" x2="1000" y2="54" stroke="#ffffff" stroke-width="2" filter="url(#glow)"/>
 </svg>

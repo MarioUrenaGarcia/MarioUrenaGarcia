@@ -56,6 +56,7 @@
 <a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH blobs" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB visualization" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/teleprompter"><img src="assets/project-teleprompter.svg" alt="Teleprompter" width="49%" /></a>
 <br /><br />
 </div>
 

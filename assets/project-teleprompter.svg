@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 290" width="500" height="290">
+<defs>
+  <filter id="glow" filterUnits="userSpaceOnUse" x="-50" y="-50" width="600" height="400">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="bigglow" filterUnits="userSpaceOnUse" x="-50" y="-50" width="600" height="400">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#000" opacity="0.28"/>
+  </pattern>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0b0002"/><stop offset="1" stop-color="#170005"/>
+  </linearGradient>
+  
+</defs>
+<style>
+  text { font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
+  .t { fill:#ff2a3d; font-size:21px; font-weight:800; letter-spacing:2px; }
+  .s { fill:#ffb3ba; font-size:12px; }
+  .dim { fill:#7a0a14; font-size:11px; letter-spacing:2px; }
+  .lbl { fill:#ffd6da; font-size:12px; letter-spacing:1px; }
+  .tag { fill:#ffd6da; font-size:11px; letter-spacing:1px; }
+  .acc { fill:#ff2a3d; font-size:12px; letter-spacing:2px; }
+  .edge { animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { stroke-opacity:.4; } 50% { stroke-opacity:1; } }
+  .cur { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 0% { opacity:1; } 50% { opacity:0; } }
+  .run { stroke-dasharray: 70 900; animation: run 3s linear infinite; }
+  @keyframes run { from { stroke-dashoffset: 70; } to { stroke-dashoffset: -900; } }
+  .scroll { animation: scroll 14s linear infinite; }@keyframes scroll { from { transform: translateY(0); } to { transform: translateY(-176px); } }.pl { fill:#ffd6da; font-size:14px; }.float { animation: float 4s ease-in-out infinite; }@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }.rec { animation: blink 1.2s steps(1) infinite; }.ghost { animation: ghost 2.4s ease-in-out infinite; }@keyframes ghost { 0%,100% { opacity:.15; } 50% { opacity:.6; } }
+</style>
+<rect x="2" y="2" width="496" height="286" rx="10" fill="url(#bg)"/>
+<rect class="edge" x="2" y="2" width="496" height="286" rx="10" fill="none" stroke="#ff0033" stroke-width="2" filter="url(#glow)"/>
+<text class="t" x="22" y="38" filter="url(#glow)">TELEPROMPTER</text>
+<text class="s" x="22" y="58">Floats on top, invisible to screen share</text>
+<text class="dim" x="478" y="36" text-anchor="end">PRJ_06</text>
+<line x1="2" y1="70" x2="498" y2="70" stroke="#ff0033" stroke-opacity=".35"/>
+<line class="run" x1="2" y1="70" x2="498" y2="70" stroke="#ffffff" stroke-width="1.6" filter="url(#glow)"/>
+
+<defs>
+  <clipPath id="view"><rect x="34" y="96" width="246" height="138"/></clipPath>
+  <linearGradient id="fadeT" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0d0002"/><stop offset="1" stop-color="#0d0002" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="fadeB" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0d0002" stop-opacity="0"/><stop offset="1" stop-color="#0d0002"/>
+  </linearGradient>
+</defs>
+<g class="float">
+  <rect x="30" y="80" width="254" height="158" rx="6" fill="#0d0002" stroke="#ff2a3d" stroke-width="2" filter="url(#glow)"/>
+  <line x1="30" y1="94" x2="284" y2="94" stroke="#5a0610"/>
+  <circle cx="40" cy="87" r="3" fill="#ff2a3d"/><circle cx="50" cy="87" r="3" fill="#7a0a14"/>
+  <text class="dim" x="276" y="91" text-anchor="end">ALWAYS ON TOP</text>
+  <g clip-path="url(#view)">
+    <g class="scroll"><text x="48" y="150" class="pl">Good evening everyone,</text><text x="48" y="172" class="pl">thank you for joining</text><text x="48" y="194" class="pl">this presentation.</text><text x="48" y="216" class="pl">Today we explore how</text><text x="48" y="238" class="pl">data turns into insight</text><text x="48" y="260" class="pl">and insight into action.</text><text x="48" y="282" class="pl">Let us begin with</text><text x="48" y="304" class="pl">the first question.</text><text x="48" y="326" class="pl">Good evening everyone,</text><text x="48" y="348" class="pl">thank you for joining</text><text x="48" y="370" class="pl">this presentation.</text><text x="48" y="392" class="pl">Today we explore how</text><text x="48" y="414" class="pl">data turns into insight</text><text x="48" y="436" class="pl">and insight into action.</text><text x="48" y="458" class="pl">Let us begin with</text><text x="48" y="480" class="pl">the first question.</text></g>
+    <rect x="34" y="96" width="246" height="40" fill="url(#fadeT)"/>
+    <rect x="34" y="194" width="246" height="40" fill="url(#fadeB)"/>
+  </g>
+  <rect x="36" y="153" width="242" height="22" fill="#ff0033" opacity=".14"/>
+  <path d="M 36 164 l -6 -5 v 10 z M 278 164 l 6 -5 v 10 z" fill="#ff2a3d"/>
+</g>
+<text class="dim" x="322" y="88">STREAM</text>
+<circle class="rec" cx="430" cy="84" r="4" fill="#ff2a3d"/>
+<text class="acc" x="472" y="88" text-anchor="end">LIVE</text>
+<rect x="322" y="96" width="150" height="96" rx="4" fill="#120004" stroke="#7a0a14" stroke-width="1.5"/>
+<rect x="330" y="104" width="60" height="6" fill="#3a040c"/>
+<rect x="330" y="116" width="134" height="38" fill="#1c0005" stroke="#3a040c"/>
+<rect x="330" y="160" width="90" height="6" fill="#3a040c"/><rect x="330" y="172" width="110" height="6" fill="#3a040c"/>
+<rect class="ghost" x="392" y="106" width="60" height="38" rx="2" fill="none" stroke="#ff2a3d" stroke-width="1.4" stroke-dasharray="4 3"/>
+<rect x="388" y="192" width="18" height="10" fill="#3a040c"/><rect x="372" y="202" width="50" height="3" fill="#3a040c"/>
+<text class="lbl" x="397" y="224" text-anchor="middle">PROMPTER: HIDDEN</text>
+<text class="dim" x="397" y="240" text-anchor="middle">PDF  OCR  DOCX  MD  TXT</text>
+
+<line x1="2" y1="246" x2="498" y2="246" stroke="#ff0033" stroke-opacity=".35"/>
+<rect x="22" y="257" width="31" height="20" rx="3" fill="#2a0008" stroke="#ff2a3d" stroke-width="1"/><text x="37" y="271" text-anchor="middle" class="tag">C#</text><rect x="60.8" y="257" width="127" height="20" rx="3" fill="#2a0008" stroke="#ff2a3d" stroke-width="1"/><text x="124" y="271" text-anchor="middle" class="tag">WINDOWS DESKTOP</text>
+<text class="acc" x="466" y="271" text-anchor="end">&gt; OPEN REPO</text>
+<rect class="cur" x="470" y="261" width="8" height="13" fill="#ff2a3d"/>
+<rect x="2" y="2" width="496" height="286" rx="10" fill="url(#scan)"/>
+</svg>
