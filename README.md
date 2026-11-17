@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Mario Ureña" width="100%" />
+<img src="assets/header.svg" alt="Mario Ureña García, Data Science Engineering and Artificial Intelligence Engineering student" width="100%" />
 
 <br />
 
@@ -10,9 +10,17 @@
 
 <br /><br />
 
-<img src="assets/terminal.svg" alt="whoami" width="100%" />
+<img src="assets/terminal.svg" alt="Terminal showing interests, skills and mission" width="100%" />
 
 </div>
+
+## Mario Ureña García
+
+Data Science Engineering and Artificial Intelligence Engineering student. I work across data science, artificial intelligence, data engineering, cybersecurity and software development, turning data into useful insights and building intelligent, reliable systems.
+
+I enjoy working with real-world datasets, graph theory, algorithms and security tooling, and I build projects that combine programming, mathematics, statistics and problem-solving. This GitHub documents my university work, experiments and personal builds.
+
+**Focus areas:** Data Science, Artificial Intelligence, Data Engineering, Cybersecurity, Software Development
 
 <br />
 
@@ -37,6 +45,10 @@
 <br /><br />
 </div>
 
+**Languages and tools:** Python, C, SQL (MySQL, PostgreSQL, Supabase), Bash, Git, Linux, Microsoft Azure, Unity, VS Code, Claude Code, Emacs, Adobe Illustrator, Adobe Premiere Pro
+
+<br />
+
 <img src="assets/section-telemetry.svg" alt="Telemetry" width="100%" />
 
 <div align="center">
@@ -51,19 +63,33 @@
 
 <div align="center">
 <br />
-<a href="https://github.com/MarioUrenaGarcia/MR-ATLAS"><img src="assets/project-mratlas.svg" alt="MR-ATLAS" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/greenlens"><img src="assets/project-greenlens.svg" alt="GreenLens" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/grafos-active-directory"><img src="assets/project-grafos-ad.svg" alt="Grafos Active Directory" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/nmapVisual"><img src="assets/project-nmapvisual.svg" alt="nmap Visual" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/MazeRunner"><img src="assets/project-mazerunner.svg" alt="MazeRunner" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/teleprompter"><img src="assets/project-teleprompter.svg" alt="Teleprompter" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/piedra-papel-tijera"><img src="assets/project-rps.svg" alt="Piedra papel tijera" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/atlas-data-science"><img src="assets/project-atlas.svg" alt="Atlas data science" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH blobs" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB visualization" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/MR-ATLAS"><img src="assets/project-mratlas.svg" alt="MR-ATLAS: mixed reality robot control for Meta Quest 3" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/greenlens"><img src="assets/project-greenlens.svg" alt="GreenLens: energy observability for local AI inference" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/grafos-active-directory"><img src="assets/project-grafos-ad.svg" alt="Grafos Active Directory: attack paths and minimal defense with graph theory" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/nmapVisual"><img src="assets/project-nmapvisual.svg" alt="nmap Visual: live web interface for nmap scans" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/MazeRunner"><img src="assets/project-mazerunner.svg" alt="MazeRunner: BFS versus A* pathfinding on a grid" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/teleprompter"><img src="assets/project-teleprompter.svg" alt="Teleprompter: Windows desktop teleprompter hidden from screen sharing" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/piedra-papel-tijera"><img src="assets/project-rps.svg" alt="Piedra, papel o tijera: webcam rock paper scissors with MediaPipe Hands" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/atlas-data-science"><img src="assets/project-atlas.svg" alt="Atlas de Data Science: interactive atlas of data science concepts" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH Blobs: 3D visualization of internet use in Mexico" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB Visualization: interactive LSB steganography visualizer" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips: battleship game written in C" width="49%" /></a>
 <br /><br />
 </div>
+
+| Project | Description | Stack |
+|---|---|---|
+| [MR-ATLAS](https://github.com/MarioUrenaGarcia/MR-ATLAS) | Mixed reality app for Meta Quest 3 that controls omnidirectional robots, simulated or real over MQTT, with ArUco marker tracking | C#, Unity, OpenXR |
+| [GreenLens](https://github.com/MarioUrenaGarcia/greenlens) ([docs](https://mariourenagarcia.github.io/greenlens/)) | Energy observability for local AI inference on Linux: measures CPU, memory and GPU energy per backend and model, reports kWh, gCO2e, cost and SCI | Go, TypeScript |
+| [Grafos Active Directory](https://github.com/MarioUrenaGarcia/grafos-active-directory) ([site](https://mariourenagarcia.github.io/grafos-active-directory/)) | Active Directory modeled as a directed graph: access paths with BFS, Dijkstra, Tarjan and Brandes, and a minimal defense plan with max flow and min cut | Python, Jupyter |
+| [nmap Visual](https://github.com/MarioUrenaGarcia/nmapVisual) | Local web interface for nmap with scan templates, live results, a network graph and suggested fixes, built only with the Python standard library | Python, JavaScript |
+| [MazeRunner](https://github.com/MarioUrenaGarcia/MazeRunner) ([demo](https://mariourenagarcia.github.io/MazeRunner/)) | BFS, DFS, Dijkstra, greedy search and A* compared on a weighted grid map, first measured and then played against | Python, Jupyter |
+| [Teleprompter](https://github.com/MarioUrenaGarcia/teleprompter) | Windows desktop teleprompter that floats above everything and stays hidden from screen sharing; reads PDF with OCR, Word, Markdown and text | C# |
+| [Piedra, papel o tijera](https://github.com/MarioUrenaGarcia/piedra-papel-tijera) ([play](https://mariourenagarcia.github.io/piedra-papel-tijera/)) | Rock paper scissors with your webcam against a machine that never loses, using MediaPipe Hands in the browser | JavaScript |
+| [Atlas de Data Science](https://github.com/MarioUrenaGarcia/atlas-data-science) ([site](https://mariourenagarcia.github.io/atlas-data-science/)) | Interactive, animated atlas of data science concepts, from math foundations to machine learning, time series and causal inference | TypeScript |
+| [ENDUTIH Blobs](https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS) ([demo](https://mariourenagarcia.github.io/ENDUTIH-BLOBS/)) | 3D visualization of internet use in Mexico from the INEGI ENDUTIH survey, 2016 to 2024, by generation, age group and sex | Three.js, Jupyter |
+| [LSB Visualization](https://github.com/MarioUrenaGarcia/LSB-Visualization) ([demo](https://mariourenagarcia.github.io/LSB-Visualization/)) | Interactive tool that shows in real time how LSB steganography hides message bits inside pixel color channels | JavaScript |
+| [BattleShips](https://github.com/MarioUrenaGarcia/BattleShips) | Battleship game written in C | C |
 
 <img src="assets/bird.svg" alt="Neon bird singing" width="100%" />
 
