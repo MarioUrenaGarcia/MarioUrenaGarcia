@@ -35,7 +35,7 @@
 <rect class="edge" x="2" y="2" width="496" height="286" rx="10" fill="none" stroke="#ff0033" stroke-width="2" filter="url(#glow)"/>
 <text class="t" x="22" y="38" filter="url(#glow)">ENDUTIH BLOBS</text>
 <text class="s" x="22" y="58">3D blobs over INEGI survey data 2016 to 2024</text>
-<text class="dim" x="478" y="36" text-anchor="end">PRJ_03</text>
+<text class="dim" x="478" y="36" text-anchor="end">PRJ_09</text>
 <line x1="2" y1="70" x2="498" y2="70" stroke="#ff0033" stroke-opacity=".35"/>
 <line class="run" x1="2" y1="70" x2="498" y2="70" stroke="#ffffff" stroke-width="1.6" filter="url(#glow)"/>
 

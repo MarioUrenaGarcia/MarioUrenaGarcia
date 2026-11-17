@@ -51,12 +51,17 @@
 
 <div align="center">
 <br />
+<a href="https://github.com/MarioUrenaGarcia/MR-ATLAS"><img src="assets/project-mratlas.svg" alt="MR-ATLAS" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/greenlens"><img src="assets/project-greenlens.svg" alt="GreenLens" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/grafos-active-directory"><img src="assets/project-grafos-ad.svg" alt="Grafos Active Directory" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/nmapVisual"><img src="assets/project-nmapvisual.svg" alt="nmap Visual" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/MazeRunner"><img src="assets/project-mazerunner.svg" alt="MazeRunner" width="49%" /></a>
+<a href="https://github.com/MarioUrenaGarcia/teleprompter"><img src="assets/project-teleprompter.svg" alt="Teleprompter" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/piedra-papel-tijera"><img src="assets/project-rps.svg" alt="Piedra papel tijera" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/atlas-data-science"><img src="assets/project-atlas.svg" alt="Atlas data science" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/ENDUTIH-BLOBS"><img src="assets/project-endutih.svg" alt="ENDUTIH blobs" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/LSB-Visualization"><img src="assets/project-lsb.svg" alt="LSB visualization" width="49%" /></a>
 <a href="https://github.com/MarioUrenaGarcia/BattleShips"><img src="assets/project-battleships.svg" alt="BattleShips" width="49%" /></a>
-<a href="https://github.com/MarioUrenaGarcia/teleprompter"><img src="assets/project-teleprompter.svg" alt="Teleprompter" width="49%" /></a>
 <br /><br />
 </div>
 
